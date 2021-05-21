@@ -4,6 +4,7 @@ title: Abstract Factory
 folder: abstract-factory
 permalink: /patterns/abstract-factory/
 categories: Creational
+language: en
 tags:
  - Gang of Four
 ---
@@ -213,8 +214,8 @@ Example use cases
 
 ## Related patterns
 
-[Factory Method](https://java-design-patterns.com/patterns/factory-method/)
-[Factory Kit](https://java-design-patterns.com/patterns/factory-kit/)
+* [Factory Method](https://java-design-patterns.com/patterns/factory-method/)
+* [Factory Kit](https://java-design-patterns.com/patterns/factory-kit/)
 
 ## Credits
 

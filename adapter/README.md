@@ -4,6 +4,7 @@ title: Adapter
 folder: adapter
 permalink: /patterns/adapter/
 categories: Structural
+language: en
 tags:
  - Gang of Four
 ---
@@ -42,8 +43,8 @@ public interface RowingBoat {
   void row();
 }
 
+@Slf4j
 public class FishingBoat {
-  private static final Logger LOGGER = LoggerFactory.getLogger(FishingBoat.class);
   public void sail() {
     LOGGER.info("The fishing boat is sailing");
   }
@@ -70,9 +71,8 @@ public class Captain {
 Now let's say the pirates are coming and our captain needs to escape but there is only fishing boat available. We need to create an adapter that allows the captain to operate the fishing boat with his rowing boat skills.
 
 ```java
+@Slf4j
 public class FishingBoatAdapter implements RowingBoat {
-
-  private static final Logger LOGGER = LoggerFactory.getLogger(FishingBoatAdapter.class);
 
   private final FishingBoat boat;
 
